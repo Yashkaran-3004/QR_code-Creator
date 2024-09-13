@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+</head>
+<body>
+    <h1>Write a URL to generate QR COde</h1>
+    <form method="post" action="/submit">
+    <input type = "text" id  = "qr" name = "url">
+
+    <button type="submit">Click to generate</button>
+    </form>
+    <div id  = "image">
+        <% if(locals.img){%>
+            <img src = "/url_img1.png">
+        <% }%>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src = "index.js"></script>
+</body>
+</html>
